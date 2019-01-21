@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@MapperScan("com.qfedu.dao.suser")
+@MapperScan("com.qfedu.dao")
 
 @ImportResource("classpath:nprovider.xml")
 @ServletComponentScan("com.qfedu.nprovider.druid")

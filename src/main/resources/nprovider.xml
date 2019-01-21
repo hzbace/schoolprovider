@@ -6,5 +6,6 @@
     <dubbo:registry protocol="zookeeper" address="zookeeper://39.105.189.141:2181"></dubbo:registry>
     <dubbo:protocol name="dubbo" port="21881"></dubbo:protocol>
     <dubbo:service interface="com.qfedu.service.suser.ISUserService" retries="0" ref="userprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sudetail.ISUdetailService" retries="0" ref="userdetailprovider"></dubbo:service>
 
 </beans>
