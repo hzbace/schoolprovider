@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @MapperScan("com.qfedu.dao")
-
 @ImportResource("classpath:nprovider.xml")
 @ServletComponentScan("com.qfedu.nprovider.druid")
 public class SchoolproviderApplication {
