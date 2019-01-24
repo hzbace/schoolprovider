@@ -4,8 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="50_userProvider"></dubbo:application>
     <dubbo:registry protocol="zookeeper" address="zookeeper://39.105.189.141:2181"></dubbo:registry>
-    <dubbo:protocol name="dubbo" port="21881"></dubbo:protocol>
+    <dubbo:protocol name="rmi" port="21881"></dubbo:protocol>
     <dubbo:service interface="com.qfedu.service.suser.ISUserService" retries="0" ref="userprovider"></dubbo:service>
     <dubbo:service interface="com.qfedu.service.sudetail.ISUdetailService" retries="0" ref="userdetailprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sschedule.ISScheduleService" retries="0" ref="sscheduleprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sblog.ISBlogService" retries="0" ref="sblogprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sblogcontent.ISBlogcontentService" retries="0" ref="sblogcontentprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.scomment.ISCommentService" retries="0" ref="scommentprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sfriend.ISFriendService" retries="0" ref="friendprovider"></dubbo:service>
+    <dubbo:service interface="com.qfedu.service.sgoods.ISGoodsService" retries="0" ref="goodsprovider"></dubbo:service>
+
 
 </beans>
